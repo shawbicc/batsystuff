@@ -10,6 +10,10 @@ app.get('/api/random', (req, res)=>{
     res.send(data[Math.floor(Math.random()*data.length)])
 })
 
+app.get('/', (req, res)=>{
+    res.send(data[Math.floor(Math.random()*data.length)])
+})
+
 app.get('/api/:category', (req, res)=>{
     const cat = req.params.category
     
